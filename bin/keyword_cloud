@@ -1,0 +1,2 @@
+#!/bin/bash
+sed 's/"//g' | tr "'" " " | sed 's/[.,!?:;_*~-]/ /g' | tr '[:upper:]' '[:lower:]' | sed -E $'s/[ \t]/\\\n/g' | sort | uniq -c | sort --numeric --reverse

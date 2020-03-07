@@ -1,0 +1,7 @@
+#!/bin/bash
+FILENAME=$1
+if [ "$FILENAME" = "" ]; then
+	echo "Filename missing."
+	exit -1
+fi
+csvtool -t ';' format '%(6)\n' $FILENAME

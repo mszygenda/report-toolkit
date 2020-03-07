@@ -1,0 +1,10 @@
+#!/bin/bash
+FILENAME=$1
+if [ "$FILENAME" = "" ]; then
+	echo "Usage ./keyword_cloud_from_export PLIK_EKSPORTU_CSV.csv > output.txt"
+	echo "eg."
+	echo "./keyword_cloud_from_export ~/Downloads/Wish_from201909030000_to202003040000_exportedAt202003041630.csv > ~/Desktop/Wish_from201909030000_to202003040000_exportedAt202003041630.keyword_cloud.txt"
+	exit 1
+fi
+
+get_text_from_export "$FILENAME" | keyword_cloud
