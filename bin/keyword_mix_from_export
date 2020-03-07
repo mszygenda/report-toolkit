@@ -1,0 +1,5 @@
+#!/bin/bash
+FILENAME=$1
+emoji_cloud_from_export $FILENAME > /tmp/mix
+keyword_cloud_from_export $FILENAME >> /tmp/mix
+cat /tmp/mix | sort --numeric --reverse

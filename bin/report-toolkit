@@ -5,7 +5,7 @@ if [ "$#" = "0" ]; then
 	echo
 	echo "./report-toolkit COMMAND FILENAME > OUTPUT_FILE"
 	echo
-	echo "Available commands are: keyword_cloud_from_export, emoji_cloud_from_export, get_text_from_export"
+	echo "Available commands are: keyword_cloud_from_export, emoji_cloud_from_export, get_text_from_export, keyword_mix_from_export"
 	echo
 	echo "eg."
 	echo "./report-toolkit emoji_cloud_from_export ~/Downloads/mentions.csv > ~/Desktop/mentions.emojicloud.txt"
