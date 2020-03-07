@@ -1,2 +1,4 @@
 #!/bin/bash
+git pull
+sudo docker pull mateuszszygenda/report-toolkit
 sudo docker run  -e"HOME=$HOME" -i -v `pwd`:`pwd` -w `pwd` -v /home:/home mateuszszygenda/report-toolkit "$@"
